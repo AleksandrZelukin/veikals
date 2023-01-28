@@ -30,7 +30,7 @@ def create():
     title = request.form['title']
     price = request.form['price']
 
-    item = Item(title=title, proce=price)
+    item = Item(title=title, price=price)
 
     try:
       db.session.add(item)
