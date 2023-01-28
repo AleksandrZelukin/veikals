@@ -1,8 +1,5 @@
 from flask import Flask, render_template, request, redirect
 from flask_sqlalchemy import SQLAlchemy
-import sqlalchemy
-
-
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///shop.db'
@@ -17,10 +14,6 @@ class Item(db.Model):
   # text = db.Column(db.Text, nullable = False)
   def __repr__(self):
     return f'ieraksts: {self.title}'
-
-
-
-
 
 @app.route('/')
 def index():
@@ -47,7 +40,6 @@ def create():
       return "Kļūda!"
   else:
     return render_template("create.html")
-
   
 # if __name__ =="__maim__":
-app.run(host='0.0.0.0', port=8080)
+app.run(host='0.0.0.0', port=8081)
