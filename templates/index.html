@@ -1,17 +1,22 @@
 {%extends 'base.html'%}
 
-
 {%block title%}
 <title>tiešsaites veikals</title>
 {%endblock%}
 
 {%block body%}
 <title>tiešsaites veikals</title>
+<div>
+    {% for i in data  %}
+<div>
+{{i.id}}
+{{i.title}}
+{{i.price}}
+{{text}}
+</div>
+    {% endfor %}
+</div>
 
-<!-- {{ data }} -->
-{% for el in data %}
 
-
-{% endfor %}
 {%endblock%}
 

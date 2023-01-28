@@ -1,16 +1,14 @@
 {%extends 'base.html'%}
-
-
 {%block title%}
 <title>Par veikalu</title>
 {%endblock%}
-
 {%block body%}
 <div class="container">
-    <h1>pievienot preci</h1>
+    <h2>pievienot preci</h2>
     <form method="post">
       <input type="text" class="fprm-control" name="title" id="title">
       <input type="number" class="fprm-control" name="price" id="price">
+      <input type="text" class="fprm-control" name="text" id="text">
       <button class="btn btn-success" type="submit">Pievienot preci</button> 
     </form>
 </div>
