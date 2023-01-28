@@ -11,6 +11,9 @@ body {
     font-size: 20px;
     color: rgb(0, 0, 10);
   }
+  table, tr, td {
+    border: 1px solid black;
+  }
   
   h3 {
     font-size: 18px;

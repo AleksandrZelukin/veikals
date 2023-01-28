@@ -9,10 +9,14 @@
 <div>
     {% for i in data  %}
 <div>
-{{i.id}}
-{{i.title}}
-{{i.price}}
-{{text}}
+    <table style="width:100%">
+        <tr>
+          <td style="width: 25%">{{i.id}}</td>
+          <td style="width: 25%">{{i.title}}</td>
+          <td style="width: 25%">{{i.price}}</td>
+          <td style="width: 25%">{{text}}</td>
+        </tr>
+    </table>
 </div>
     {% endfor %}
 </div>
