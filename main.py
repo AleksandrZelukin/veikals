@@ -13,9 +13,10 @@ class Item(db.Model):
   isActive = db.Column(db.Boolean, default=True)
   text = db.Column(db.Text, nullable = False)
 
+# db.create_all()
 
-  def __repr__(self):
-    return self.title
+def __repr__(self):
+  return self.title
 
 @app.route('/')
 def index():
