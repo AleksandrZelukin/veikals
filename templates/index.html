@@ -8,17 +8,9 @@
 <title>tiešsaites veikals</title>
 <div>
    
-
+    {% for i in data  %}
     <table style="width:100%">
         <tr>
-            <th>ID</th>
-            <th>Title</th>
-            <th>Cena</th>
-            <th>Apraksts</th>
-        </tr>
-        {% for i in data  %}
-        <tr>
-            
           <td style="width: 25%">{{i.id}}</td>
           <td style="width: 25%">{{i.title}}</td>
           <td style="width: 25%">{{i.price}}</td>
